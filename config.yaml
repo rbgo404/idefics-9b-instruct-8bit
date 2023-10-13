@@ -1,1 +1,10 @@
-
+build:
+  system_packages:
+    - "libssl-dev"
+  python_packages:
+    - "torch==2.1.0"
+    - "transformers==4.34.0"
+    - "accelerate==0.23.0"
+    - "bitsandbytes==0.41.1"
+    - "scipy==1.11.3"
+    - "Pillow==10.0.1"
