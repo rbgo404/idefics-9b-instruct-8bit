@@ -1,1 +1,1 @@
-# idefics-9b-instruct-8bit
+# Idefics-9b-Instruct-8bit
