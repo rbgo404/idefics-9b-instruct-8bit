@@ -21,8 +21,8 @@ class InferlessPythonModel:
 		final_result = ""
 
 		for i, t in enumerate(generated_text):
-            print(f"{i}:\n{t}\n")
-            final_result += f"{i}:\n{t}\n"
+            		print(f"{i}:\n{t}\n")
+            		final_result += f"{i}:\n{t}\n"
 
         return {"generated_text": final_result}
 
