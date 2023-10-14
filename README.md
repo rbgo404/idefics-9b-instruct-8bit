@@ -42,7 +42,7 @@ The following is a sample Input and Output JSON for this model which you can use
       "data": [
         "What should I eat after a workout session?"
       ],
-      "name": "prompt",
+      "name": "prompts",
       "shape": [
         1
       ],
