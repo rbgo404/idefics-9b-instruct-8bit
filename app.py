@@ -24,7 +24,7 @@ class InferlessPythonModel:
             		print(f"{i}:\n{t}\n")
             		final_result += f"{i}:\n{t}\n"
 
-        return {"generated_text": final_result}
+	        return {"generated_text": final_result}
 
 
 	def finalize(self):
