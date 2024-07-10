@@ -66,7 +66,8 @@ Open the `app.py` file. This contains the main code for inference. It has three 
 
 ```python
 def infer(self, inputs):
-  prompts = [[inputs["image_url"],inputs["prompts"]]]
+  prompts = [[inputs["image_url"],
+              inputs["prompts"]]]
 ```
 
 **Finalize** - This function is used to perform any cleanup activity for example you can unload the model from the gpu by setting to `None`.

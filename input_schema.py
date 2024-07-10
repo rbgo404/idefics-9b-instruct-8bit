@@ -3,7 +3,7 @@ INPUT_SCHEMA = {
         'datatype': 'STRING',
         'required': True,
         'shape': [1],
-        'example': ["What is Quantum Computing?"]
+        'example': ["Explain this image."]
     },
     "image_url": {
         'datatype': 'STRING',

@@ -7,8 +7,8 @@ class InferlessPythonModel:
 		self.processor = AutoProcessor.from_pretrained(model_id)
 
 	def infer(self, inputs):
-		prompts = [[inputs["image_url"],inputs["prompts"]]]
-		
+		prompts = [[inputs["image_url"],inputs["prompt"]]]
+
 		inputs = self.processor(prompts, return_tensors="pt").to("cuda")
 		bad_words_ids = self.processor.tokenizer(["<image>", "<fake_token_around_image>"], add_special_tokens=False).input_ids
 		generated_ids = self.model.generate(**inputs, bad_words_ids=bad_words_ids, max_length=500)
